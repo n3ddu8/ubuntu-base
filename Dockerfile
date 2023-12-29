@@ -8,7 +8,9 @@ RUN sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
 RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 RUN sudo apt update && sudo apt install gh -y
 # install github cli extensions:
-RUN gh extension install https://github.com/nektos/gh-act
+# this is failing:
+# RUN gh extension install https://github.com/nektos/gh-act
+###
 # install microsoft odbc driver 17 & sql tools:
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | tee /etc/apt/trusted.gpg.d/microsoft.asc
 RUN curl https://packages.microsoft.com/config/ubuntu/22.04/prod.list | tee /etc/apt/sources.list.d/mssql-release.list
