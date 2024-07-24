@@ -76,7 +76,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-An Alpine:latest container image with basic tooling:
+An Ubuntu:22.04 container image with basic tooling:
 * curl
 * Python3
 * Pip for Python3
