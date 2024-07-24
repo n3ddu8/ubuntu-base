@@ -21,7 +21,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Ubuntu ODBC</h3>
+<h3 align="center">Ubuntu Base</h3>
 
   <p align="center">
     Ubuntu Container with ODBC Drivers pre-installed.
